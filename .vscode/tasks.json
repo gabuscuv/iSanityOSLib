@@ -1,0 +1,33 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "group": "build",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+              // enable for debugging with breakpoints
+              "dev_build=yes",
+            ],
+            "problemMatcher": "$msCompile"
+          },
+          {
+            "label": "copy",
+            "group": "build",
+            "type": "shell",
+            "command": "cp",
+            "dependsOn" : [ "build" ],
+            "args": [
+                "-r",
+              // enable for debugging with breakpoints
+              "${workspaceFolder}/isanelib/bin",
+              "$HOME/Documents/GodotProjects/iSane/addons/iSaneLib",
+            ],
+            "problemMatcher": "$msCompile"
+          }
+          
+    ]
+}
