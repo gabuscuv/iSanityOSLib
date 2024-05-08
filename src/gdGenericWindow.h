@@ -10,12 +10,13 @@ class GDGenericWindow : public Window {
 
 protected:
 	static void _bind_methods();
-
+	
 public:
 	GDGenericWindow();
 	~GDGenericWindow();
-
+	void CloseRequested();
 	void _process(double delta);
+	
 };
 
 }
