@@ -1,5 +1,5 @@
-#ifndef GDEXAMPLE_H
-#define GDEXAMPLE_H
+#ifndef GDGENERICWINDOW_H
+#define GDGENERICWINDOW_H
 
 #include <godot_cpp/classes/window.hpp>
 
@@ -18,6 +18,9 @@ public:
 	void _process(double delta);
 	
 };
+
+
+
 
 }
 

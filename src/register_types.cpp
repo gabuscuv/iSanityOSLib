@@ -1,6 +1,7 @@
 #include "register_types.h"
 
 #include "gdGenericWindow.h"
+#include "gdLoginWindow.h"
 
 #include <gdextension_interface.h>
 #include <godot_cpp/core/defs.hpp>
@@ -15,6 +16,7 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 	}
 
 	ClassDB::register_class<GDGenericWindow>();
+	ClassDB::register_class<GDLoginWindow>();
 }
 
 void uninitialize_example_module(ModuleInitializationLevel p_level) {
