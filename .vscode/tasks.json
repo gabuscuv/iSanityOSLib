@@ -27,7 +27,18 @@
               "$HOME/Documents/GodotProjects/iSane/addons/iSaneLib",
             ],
             "problemMatcher": "$msCompile"
+          },
+          {
+            "label": "build, copy and Run",
+            "group": "build",
+            "type": "shell",
+            "command": "godot4",
+            "dependsOn" : [ "build", "copy" ],
+            "args": [
+              // enable for debugging with breakpoints
+              "$HOME/Documents/GodotProjects/iSane/project.godot",
+            ],
+            "problemMatcher": "$msCompile"
           }
-          
     ]
 }
