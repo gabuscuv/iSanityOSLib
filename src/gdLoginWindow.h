@@ -7,6 +7,7 @@ namespace godot
 {
 	class HBoxContainer;
 	class String;
+	class GDTextField;
 
 	class GDLoginWindow : public GDGenericWindow 
 	{
@@ -17,8 +18,9 @@ namespace godot
 		static void _bind_methods() ;
 	
 	private:
-	Vector2 textEditSize = Vector2(110.0f,21.0f);
-	HBoxContainer* new_Field(String nameField);
+	//Vector2 buttonSize = Vector2(10.0f,10.0f);
+	GDTextField* UserField;
+	GDTextField* PasswordField;
 
 	public:
 		GDLoginWindow();

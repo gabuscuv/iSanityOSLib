@@ -1,5 +1,6 @@
 #include "register_types.h"
 
+#include "gdTextField.h"
 #include "gdGenericWindow.h"
 #include "gdLoginWindow.h"
 
@@ -15,6 +16,7 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 		return;
 	}
 
+	ClassDB::register_class<GDTextField>();
 	ClassDB::register_class<GDGenericWindow>();
 	ClassDB::register_class<GDLoginWindow>();
 }
