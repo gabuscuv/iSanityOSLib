@@ -14,7 +14,7 @@ protected:
 public:
 	GDGenericWindow();
 	~GDGenericWindow();
-	void CloseRequested();
+	void close_requested();
 	void _process(double delta);
 	
 };

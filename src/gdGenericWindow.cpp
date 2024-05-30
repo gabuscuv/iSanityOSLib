@@ -5,21 +5,21 @@ using namespace godot;
 
 void GDGenericWindow::_bind_methods() 
 {
-	ClassDB::bind_method(D_METHOD("CloseRequested"), &GDGenericWindow::CloseRequested);
+	ClassDB::bind_method(D_METHOD("close_requested"), &GDGenericWindow::close_requested);
 }
 
 GDGenericWindow::GDGenericWindow() {
 	//Window::Window();
 	// Initialize any variables here.
 	//
-	connect("close_requested", Callable(this, "CloseRequested"));
+	connect("close_requested", Callable(this, "close_requested"));
 }
 
 GDGenericWindow::~GDGenericWindow() {
 	// Add your cleanup here.
 }
 
-void GDGenericWindow::CloseRequested()
+void GDGenericWindow::close_requested()
 {
 	hide();
 }

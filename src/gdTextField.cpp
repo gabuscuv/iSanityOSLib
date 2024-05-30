@@ -37,7 +37,7 @@ void GDTextField::_process(double delta)
 	HBoxContainer::_process(delta);
 }
 
-String GDTextField::GetStringTextEditField()
+String GDTextField::get_textedit_string_field()
 {
     return fieldTextedit->get_text();
 }

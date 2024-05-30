@@ -19,7 +19,7 @@ public:
 	GDTextField();
 	GDTextField(String fieldName);
 	~GDTextField();
-	String GetStringTextEditField();
+	String get_textedit_string_field();
 	void _process(double delta);
 	
 };

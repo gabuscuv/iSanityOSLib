@@ -30,7 +30,7 @@ namespace godot
 	String valid_password;
 
 	private:
-	void CheckLogin();
+	void check_login();
 
 	public:
 		GDLoginWindow();
